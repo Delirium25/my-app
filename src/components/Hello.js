@@ -1,9 +1,10 @@
 import './Hello.css';
 
-function Hello() {
+function Hello(props) {
+  console.log(props)
   return (
     <div className="Hello">
-        Valami szöveget írjunk bele a divbe.
+        I am {props.name} and I am {props.age} years old.
     </div>
   );
 }
